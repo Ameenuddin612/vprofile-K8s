@@ -35,8 +35,8 @@ spec:
           claimName: db-pv-claim
 
       initContainers:
-      - name: busy-box
-        image: busy-box:latest
+      - name: busybox
+        image: busybox:latest
         args: ["rm", "-rf", "/var/lib/mysql/lost+found"]
         volumeMounts:
         - name: vpro-db-data
